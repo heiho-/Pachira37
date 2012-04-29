@@ -10,4 +10,15 @@
 
 @implementation Game
 
+@synthesize gameSettings = _gameSettings;
+
+- (id)init {
+    self = [super init];
+    if (self) {
+        
+        _endCount = 1; //0からなのか1からなのかどうしようか
+    }
+    return self;
+}
+
 @end

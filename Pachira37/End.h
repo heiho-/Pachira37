@@ -9,11 +9,20 @@
 #import <Foundation/Foundation.h>
 
 #import "Rink.h"
+@class Game;
 
 @interface End : NSObject
 {
-    int nth;
-    Rink* rink;
+    // parent
+    Game* _game; 
+    
+    int _nth; //nエンド目
+    Rink* _rink;
 }
+@property(nonatomic, assign, readonly) Game* game;
+@property(nonatomic, readonly) int nth;
+@property(nonatomic, retain) Rink* rink;
+
+- (id)initWithGame:(Game *)game;
 
 @end

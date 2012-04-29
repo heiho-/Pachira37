@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D1938A6154D8D1000F45833 /* RinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D1938A5154D8D1000F45833 /* RinkViewController.m */; };
+		8D1938A9154D917300F45833 /* GameSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D1938A8154D917300F45833 /* GameSettings.m */; };
 		8D30674B153B5DBD00672C89 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D30674A153B5DBD00672C89 /* Game.m */; };
 		8D897B7A153309AB004BED3C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D897B79153309AB004BED3C /* UIKit.framework */; };
 		8D897B7C153309AB004BED3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D897B7B153309AB004BED3C /* Foundation.framework */; };
@@ -37,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8D1938A4154D8D1000F45833 /* RinkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RinkViewController.h; sourceTree = "<group>"; };
+		8D1938A5154D8D1000F45833 /* RinkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RinkViewController.m; sourceTree = "<group>"; };
+		8D1938A7154D917300F45833 /* GameSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameSettings.h; sourceTree = "<group>"; };
+		8D1938A8154D917300F45833 /* GameSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameSettings.m; sourceTree = "<group>"; };
 		8D306749153B5DBD00672C89 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
 		8D30674A153B5DBD00672C89 /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
 		8D897B75153309AB004BED3C /* Pachira37.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pachira37.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,6 +111,8 @@
 				8D30674A153B5DBD00672C89 /* Game.m */,
 				8D897BB815333C3B004BED3C /* Stone.h */,
 				8D897BB915333C3B004BED3C /* Stone.m */,
+				8D1938A7154D917300F45833 /* GameSettings.h */,
+				8D1938A8154D917300F45833 /* GameSettings.m */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -116,6 +124,15 @@
 				8DD57D9D154C6B630042DCF8 /* RinkViewFromAbove.m */,
 			);
 			name = view;
+			sourceTree = "<group>";
+		};
+		8D1938A3154D8C9100F45833 /* viewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				8D1938A4154D8D1000F45833 /* RinkViewController.h */,
+				8D1938A5154D8D1000F45833 /* RinkViewController.m */,
+			);
+			name = viewcontroller;
 			sourceTree = "<group>";
 		};
 		8D897B6A153309AB004BED3C = {
@@ -153,9 +170,10 @@
 			children = (
 				8D897B88153309AB004BED3C /* AppDelegate.h */,
 				8D897B89153309AB004BED3C /* AppDelegate.m */,
+				8DD57DA0154C6E930042DCF8 /* RinkObserver.h */,
 				8D1938A0154D8B5A00F45833 /* model */,
 				8D1938A2154D8B7200F45833 /* view */,
-				8DD57DA0154C6E930042DCF8 /* RinkObserver.h */,
+				8D1938A3154D8C9100F45833 /* viewcontroller */,
 				8D897B80153309AB004BED3C /* Supporting Files */,
 			);
 			path = Pachira37;
@@ -304,6 +322,8 @@
 				8D897BBE15333C3B004BED3C /* Stone.m in Sources */,
 				8D30674B153B5DBD00672C89 /* Game.m in Sources */,
 				8DD57D9E154C6B630042DCF8 /* RinkViewFromAbove.m in Sources */,
+				8D1938A6154D8D1000F45833 /* RinkViewController.m in Sources */,
+				8D1938A9154D917300F45833 /* GameSettings.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

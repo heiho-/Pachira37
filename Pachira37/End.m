@@ -10,4 +10,16 @@
 
 @implementation End
 
+@synthesize rink = _rink;
+@synthesize nth = _nth;
+@synthesize game = _game;
+
+- (id)initWithGame:(Game *)g {
+    self = [super init];
+    if (self) {
+        _game = g;
+    }
+    return self;
+}
+
 @end

@@ -10,8 +10,13 @@
 #import "StoneDelegate.h"
 #import "Stone.h"
 
+@class End;
+
 @interface Rink : NSObject <StoneDelegate>
 {
+    // parent
+    End* end;
+    
     NSArray* _rinkObservers;
     
     int _numStones;

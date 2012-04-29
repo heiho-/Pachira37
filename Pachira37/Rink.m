@@ -8,6 +8,7 @@
 
 #import "Rink.h"
 #import "RinkObserver.h"
+#import "End.h"
 
 @interface Rink()
 
@@ -18,9 +19,9 @@
 
 @implementation Rink
 
-@synthesize  stones = _stones;
-@synthesize  activeStones = _activeStones;
-@synthesize  movingStones = _movingStones;
+@synthesize stones = _stones;
+@synthesize activeStones = _activeStones;
+@synthesize movingStones = _movingStones;
 @synthesize numStones = _numStones;
 
 static const CGFloat WIDTH = 400.0;
@@ -30,6 +31,9 @@ static const CGFloat HEIGHT = 600.0; // 値はてきとう
 
 # pragma mark -
 # pragma mark memory kanri
+
+// とりあえずテスト用に仮にinit作る
+// 実際はGameの情報をとってくる
 
 - (id)init {
     self = [super init];

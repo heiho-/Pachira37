@@ -8,13 +8,21 @@
 
 #import <Foundation/Foundation.h>
 #import "Player.h"
+#import "GameSettings.h"
 
 @interface Game : NSObject
 {
     Player* _player1;
     Player* _player2;
     
-    NSArray* _ends;
-        
+    NSMutableArray* _ends;
+    
+    // 今、何end目?
+    int _endCount;
+    
+    GameSettings* _gameSettings;
 }
+
+@property (nonatomic, retain, readonly) GameSettings* gameSettings;
+
 @end
