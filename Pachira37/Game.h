@@ -15,7 +15,6 @@
     Player* _player2;
     
     NSArray* _ends;
-    
-    
+        
 }
 @end

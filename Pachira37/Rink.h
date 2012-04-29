@@ -12,6 +12,8 @@
 
 @interface Rink : NSObject <StoneDelegate>
 {
+    NSArray* _rinkObservers;
+    
     int _numStones;
     
     NSMutableArray* _stones;
@@ -23,6 +25,7 @@
 @property(nonatomic, readonly, retain) NSMutableArray* activeStones;
 @property(nonatomic, readonly, retain) NSMutableArray* movingStones;
 @property(nonatomic, readonly) int numStones;
+
 - (void)calcNext;
 
 + (CGFloat)distanceOf:(Stone*)stone1 to:(Stone *)stone2;

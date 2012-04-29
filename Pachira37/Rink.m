@@ -7,10 +7,13 @@
 //
 
 #import "Rink.h"
+#import "RinkObserver.h"
 
 @interface Rink()
 
+- (void)notifyObservers;
 - (void)initStones;
+
 @end
 
 @implementation Rink
@@ -44,6 +47,12 @@ static const CGFloat HEIGHT = 600.0; // 値はてきとう
 }
 
 # pragma mark -
+
+- (void)notifyObservers {
+    for(id<RinkObserver> observer in _rinkObservers) {
+        [observer notify];
+    }
+}
 
 - (void)calcNext {
     for(Stone* activeStone in self.activeStones) {

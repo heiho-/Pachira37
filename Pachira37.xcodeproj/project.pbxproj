@@ -23,6 +23,7 @@
 		8D897BBC15333C3B004BED3C /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D897BB515333C3B004BED3C /* Player.m */; };
 		8D897BBD15333C3B004BED3C /* Rink.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D897BB715333C3B004BED3C /* Rink.m */; };
 		8D897BBE15333C3B004BED3C /* Stone.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D897BB915333C3B004BED3C /* Stone.m */; };
+		8DD57D9E154C6B630042DCF8 /* RinkViewFromAbove.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD57D9D154C6B630042DCF8 /* RinkViewFromAbove.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,9 @@
 		8D897BB715333C3B004BED3C /* Rink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = Rink.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		8D897BB815333C3B004BED3C /* Stone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = Stone.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		8D897BB915333C3B004BED3C /* Stone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = Stone.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		8DD57D9C154C6B630042DCF8 /* RinkViewFromAbove.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RinkViewFromAbove.h; sourceTree = "<group>"; };
+		8DD57D9D154C6B630042DCF8 /* RinkViewFromAbove.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RinkViewFromAbove.m; sourceTree = "<group>"; };
+		8DD57DA0154C6E930042DCF8 /* RinkObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RinkObserver.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D1938A0154D8B5A00F45833 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				8D897BB215333C3B004BED3C /* End.h */,
+				8D897BB315333C3B004BED3C /* End.m */,
+				8D897BB415333C3B004BED3C /* Player.h */,
+				8D897BB515333C3B004BED3C /* Player.m */,
+				8D897BB615333C3B004BED3C /* Rink.h */,
+				8D897BB715333C3B004BED3C /* Rink.m */,
+				8D306749153B5DBD00672C89 /* Game.h */,
+				8D30674A153B5DBD00672C89 /* Game.m */,
+				8D897BB815333C3B004BED3C /* Stone.h */,
+				8D897BB915333C3B004BED3C /* Stone.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		8D1938A2154D8B7200F45833 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				8DD57D9C154C6B630042DCF8 /* RinkViewFromAbove.h */,
+				8DD57D9D154C6B630042DCF8 /* RinkViewFromAbove.m */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
 		8D897B6A153309AB004BED3C = {
 			isa = PBXGroup;
 			children = (
@@ -121,18 +151,11 @@
 		8D897B7F153309AB004BED3C /* Pachira37 */ = {
 			isa = PBXGroup;
 			children = (
-				8D897BB215333C3B004BED3C /* End.h */,
-				8D897BB315333C3B004BED3C /* End.m */,
-				8D897BB415333C3B004BED3C /* Player.h */,
-				8D897BB515333C3B004BED3C /* Player.m */,
-				8D897BB615333C3B004BED3C /* Rink.h */,
-				8D897BB715333C3B004BED3C /* Rink.m */,
-				8D306749153B5DBD00672C89 /* Game.h */,
-				8D30674A153B5DBD00672C89 /* Game.m */,
-				8D897BB815333C3B004BED3C /* Stone.h */,
-				8D897BB915333C3B004BED3C /* Stone.m */,
 				8D897B88153309AB004BED3C /* AppDelegate.h */,
 				8D897B89153309AB004BED3C /* AppDelegate.m */,
+				8D1938A0154D8B5A00F45833 /* model */,
+				8D1938A2154D8B7200F45833 /* view */,
+				8DD57DA0154C6E930042DCF8 /* RinkObserver.h */,
 				8D897B80153309AB004BED3C /* Supporting Files */,
 			);
 			path = Pachira37;
@@ -280,6 +303,7 @@
 				8D897BBD15333C3B004BED3C /* Rink.m in Sources */,
 				8D897BBE15333C3B004BED3C /* Stone.m in Sources */,
 				8D30674B153B5DBD00672C89 /* Game.m in Sources */,
+				8DD57D9E154C6B630042DCF8 /* RinkViewFromAbove.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

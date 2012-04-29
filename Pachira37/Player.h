@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#import "Player.h"
+
 @interface Player : NSObject
 {
     // 先攻か後攻か とりあえずBOOLで
@@ -20,5 +22,11 @@
     int _loseCount;
     
 }
+
+@property(nonatomic, readonly) int rating;
+@property(nonatomic, readonly) int winCount;
+@property(nonatomic, readonly) int loseCount;
+
++ (void)setResultWinner:(Player*)winner Loser:(Player*)loser;
 
 @end
