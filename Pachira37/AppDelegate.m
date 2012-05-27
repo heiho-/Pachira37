@@ -3,7 +3,7 @@
 //  Pachira37
 //
 //  Created by  on 12/04/09.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2012 __PAPASUCompanyName__. All rights reserved.
 //
 //BNE参上！！
 
